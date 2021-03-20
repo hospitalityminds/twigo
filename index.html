@@ -30,15 +30,44 @@
         <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/responsive.css">
+     
         <script src="https://kit.fontawesome.com/470d8ad497.js" crossorigin="anonymous"></script>
-
+       
+        
         <style>
-            .responsive {
+         
+         .responsive {
                 width: 100%;
                 max-width:100%;
                 height:auto;
             }
+            .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
         </style>
         <style>
             @media(min-width: 992px){
@@ -46,7 +75,9 @@
                 display: none;
               }
             }
-            
+            .swiper-container{
+                margin-top: 16vh;
+            }
           </style>
     </head>
     <body>
@@ -71,12 +102,13 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="accomodation.html">
                                     <span style="font-size: medium; ">Room</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="offer.html
+                                ">
                                     <span style="font-size: medium; ">Offer</span>
                                 </a>
                             </li>
@@ -86,12 +118,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="gallery.html">
                                     <span style="font-size: medium; ">Gallery</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="contact.html">
                                     <span style="font-size: medium; ">Contact</span>
                                 </a>
                             </li>
@@ -107,7 +139,7 @@
                         <div style="margin: 15px;">
                             <!-- <a href="" style="font-size:35px;"></a> -->
                             <!-- <a href="" style="font-size:35px;"> <i class="fab fa-whatsapp-square"></i></a> -->
-                           <a href="#"> <button type="button" class="btn btn-danger"><i class="fas fa-phone-square-alt" style="font-size: 23px;"></i></button></a>
+                           <a href="tel: +917208651615"> <button type="button" class="btn btn-danger"><i class="fas fa-phone-square-alt" style="font-size: 23px;"></i></button></a>
                            <a href="#"><button type="button" class="btn btn-danger"> <i class="fab fa-whatsapp-square" style="font-size: 23px;color:#47c758"></i></button></a>
                             <!-- <a href=""><button type="button" class="btn btn-danger">+91 9687576624</button></a> -->
                             <a href="#" style="padding: 0px 0px 25px;"><button type="button" class="btn btn-danger">BOOK NOW</button></a>
@@ -129,7 +161,23 @@
                 </div>
             </div>
         </section> -->
-        <img src="image/slider/3.jpg" alt="Fountain inn" class="img-fluid" style="max-height: 600px;width: 100%;">
+        <!-- <img src="image/exterior-2.jpg" alt="Fountain inn" class="img-fluid" style="max-height: 700px;width: 100%;">
+    -->
+   <!-- Swiper -->
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="image/exterior-1.jpg" alt=""class="img-fluid" style="max-height: 700px;width: 100%;" ></div>
+      <div class="swiper-slide"><img src="image/room-11.jpg" alt=""class="img-fluid" style="max-height: 700px;width: 100%;" ></div>
+      <div class="swiper-slide"><img src="image/reception-1.jpg" alt=""class="img-fluid" style="max-height: 700px;width: 100%;" ></div>
+      <div class="swiper-slide"><img src="image/room-8.jpg" alt=""class="img-fluid" style="max-height: 700px;width: 100%;" ></div>
+    
+    </div>
+  </div>
+
+    
+    
+      <!-- Initialize Swiper -->
+    
         <!--================Banner Area =================-->
         <!--================ About History Area  =================-->
         <section class="about_history_area section_gap bg1">
@@ -138,13 +186,17 @@
                     <div class="col-md-6 d_flex align-items-center">
                         <div class="about_content ">
                             <h2 class="title title_color" style="color: #ffffff">About Us</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            <p>Featuring free WiFi and a restaurant, Hotel Twigo inn offers accommodation in Mumbai. The property is located in Andheri. Guests can enjoy the on-site bar.
+
+                                Every room at this hotel is air-conditioned and is fitted with a flat-screen TV with satellite channels. Certain rooms have a seating area for your convenience. You will find a kettle in the room. The rooms are fitted with a private bathroom. For your comfort, you will find free toiletries and a hair dryer.
+                                
+                                The property provides 24-hour concierge desk and room service.
                             </p>
                             <a href="tel:+91 98690 55162" class="btn btn-danger">Call Now</a>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="image/flogo/about.JPG" style="width:100%;">
+                        <img src="image/room-11.jpg" style="width:100%;">
                         <!-- <img class="img-fluid" src="image/flogo/about.JPG" alt="img">-->
                         <!-- <img src="image/flogo/about.JPG" alt="Nature" class="responsive" >-->
                     </div>
@@ -238,7 +290,7 @@
         <section class="latest_blog_area section_gap nearby_destinations">
             <div class="container">
                 <div class="section_title text-center">
-                    <h2 class="title_color">Nearby Destinations </h2>
+                    <h2 class="title_color" style="color: white !important;">Nearby Destinations </h2>
                 </div>
                 <div class="row mb_30">
                     <div class="col-lg-4 col-md-6">
@@ -381,36 +433,38 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-footer-widget">
-                            <h6 class="footer_title">Facebook</h6>
+                            <h6 class="footer_title">Quick Access</h6>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhotelfountaininn%2F&tabs=timeline&width=250&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1075577906123484" width="250" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
+                                 <ul class="list">
+                                     <li><a href="index.html"><b>Home</b></a></li>
+                                     <li><a href="accomodation.html"><b>Rooms</b></a></li>
+                                     <li><a href="gallery.html"><b>Gallery</b></a></li>
+                                     <li><a href="contact.html"><b>Contact</b></a></li>
+                                 </ul> 
                                    
                                 </div>
                                 <div class="col-4">
-
+    
                                 </div>										
                             </div>							
                         </div>
                     </div>							
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="single-footer-widget">
                             <h6 class="footer_title">Social Link</h6>
-                            <div id="TA_cdswritereviewlg115" class="TA_cdswritereviewlg">
-                                <ul id="gvxRGTfwrXs4" class="TA_links FbM8CzL8ZYf">
-                                    <li id="Xx3Vb253o49i" class="mX7KgJT">
-                                        <!-- <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/medium-logo-12097-2.png" alt="TripAdvisor"/></a> -->
-                                    </li>
-                                </ul>
-                            </div>
-                            <script async src="https://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=115&amp;locationId=15681212&amp;lang=en_US&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk = true"></script>
-
+                            <a href="#"> <i class="fab fa-whatsapp-square" style="font-size: 34px;color:#47c758"></i></a>&nbsp;
+                            <a href="#"> <i class="fab fa-facebook-square" style="font-size: 34px;color:#4267B2"></i></a>&nbsp;  
+                            <a href="#"> <i class="fab fa-instagram-square" style="font-size: 34px;color:#fbad50"></i></a>&nbsp;  
+                         
+                          
+    
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-footer-widget instafeed">
                             <h6 class="footer_title">Location</h6>
-                            <iframe width="100%" height="240" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=%20Plot-66%20Office%20%2C%20Janmabhoomi%20Marg%2C%20Pitha%20St%2C%20Fort%2C%20Mumbai%2C%20Maharashtra%20400001&key=AIzaSyDfawVF7z0zb57KuvbSdvIIBxYEioWjw48" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15973.360855940708!2d72.81253835005519!3d19.14222921853398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7b7a59c2536eb%3A0x54bf69f16a1b0444!2shotel%20twigo%20inn%20andheri!3m2!1d19.1402254!2d72.8205668!5e0!3m2!1sen!2sin!4v1616048827188!5m2!1sen!2sin" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>						
                 </div>
@@ -418,8 +472,8 @@
                     <p class="col-lg-8 col-sm-12 footer-text m-0">
                         Copyright &copy;<script>document.write(new Date().getFullYear());</script> | All rights reserved | Made with <i class="fas fa-heart" style="color:red"></i> By<a href="http://hospitalityminds.com/" target="_blank">Hospitality Minds</a></p>
                      <div class="col-lg-4 col-sm-12 footer-social">
-                         <a href="https://www.facebook.com/Hotel-Fountain-Inn-368231230603002/?modal=admin_todo_tour" target="_blank"><i class="fa fa-facebook"></i></a>
-                         <a href="https://www.instagram.com/hotelfountaininn" target="_blank"><i class="fa fa-instagram"></i></a>
+                         <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                         <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
                           <!--<a href="#"><i class="fa fa-dribbble"></i></a>
                           <a href="#"><i class="fa fa-behance"></i></a>
                       </div>-->
@@ -429,19 +483,6 @@
             </div>
         </footer>
         <!--================ End footer Area  =================-->
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5e10568f7e39ea1242a2fe6f/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -457,7 +498,10 @@
         <script src="js/stellar.js"></script>
         <script src="vendors/lightbox/simpleLightbox.min.js"></script>
         <script src="js/custom.js"></script>
-
-
-    </body>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+        <script>
+            var swiper = new Swiper('.swiper-container');
+          </script>
 </html>
